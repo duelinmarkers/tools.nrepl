@@ -171,7 +171,7 @@
     combine-responses
     :value))
 
-(defn connect
+(defn ^java.io.Closeable connect
   "Connects to a socket-based REPL at the given host (defaults to localhost) and port,
    returning the Transport (by default clojure.tools.nrepl.transport/bencode)
    for that connection.
